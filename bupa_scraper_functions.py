@@ -26,7 +26,11 @@ from youtube_scraper import *
 from urllib.parse import urlparse
 
 from googleapiclient.discovery import build
-key_api = 'AIzaSyBjxpSWaZhil81FusrCQtbNlY4ufBIVRvI'
+
+import os
+
+key_api = os.environ.get('youtube_api')
+
 
 #### Functions
 
